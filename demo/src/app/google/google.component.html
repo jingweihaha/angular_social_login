@@ -1,0 +1,6 @@
+<div *ngIf="!signed" >
+  <div id="googleBtn"  (click)="googleInit()">Google SignIn</div> <br/>
+</div>
+<div *ngIf="signed">
+  <div id="googleBtn2" (click)="googlelogout()">Google SignOut</div>
+</div>

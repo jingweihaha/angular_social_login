@@ -9,6 +9,7 @@ import { DemoComponent } from './demo/demo.component';
 
 import { SocialLoginModule } from 'angularx-social-login';
 import { AuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider  } from 'angularx-social-login';
+import { GoogleComponent } from './google/google.component';
 
 
 const config = new AuthServiceConfig([
@@ -18,7 +19,7 @@ const config = new AuthServiceConfig([
   },
   {
     id: FacebookLoginProvider.PROVIDER_ID,
-    provider: new FacebookLoginProvider('561602290896109')
+    provider: new FacebookLoginProvider('2226339590961503')
   },
   {
     id: LinkedInLoginProvider.PROVIDER_ID,
@@ -34,7 +35,8 @@ export function provideConfig() {
   declarations: [
     AppComponent,
     NavbarComponent,
-    DemoComponent
+    DemoComponent,
+    GoogleComponent
   ],
   imports: [
     BrowserModule,
